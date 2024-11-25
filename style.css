@@ -1,0 +1,393 @@
+* {
+    color: #000000;
+    
+}
+
+
+
+body {
+    background: #ffffff;
+}
+html,body{
+    scroll-behavior: smooth;
+    height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/* ---- custome Scrollbar--- */
+
+/* Style for WebKit browsers (Chrome, Safari, Edge) */
+body::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #b0ef05; /* Background color of the scrollbar track */
+    border-radius: 10px; /* Rounded corners for the track */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #fc02b9; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners for the thumb */
+    border: 3px solid #0b0b0b; /* Padding around the thumb to separate it from the track */
+  }
+  
+  body::-webkit-scrollbar-thumb:hover {
+    background-color: #3e0ecd; /* Darker color on hover */
+  }
+  
+  /* Style for Firefox */
+  body {
+    scrollbar-width: thin; /* Set scrollbar width to thin */
+    scrollbar-color: #bc1010 #09ed73; /* Color of the thumb and track in Firefox */
+  }
+  
+
+/* -----Global Class------- */
+
+.bdr {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.sections {
+    margin-top: 100px;
+}
+
+.section-row{
+    background-color: #dddddd;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3), 0px 6px 6px rgba(0, 0, 0, 0.15);
+}
+
+
+#section-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+#section-heading h2{
+    position: relative;
+    font-weight: 700;
+    text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3), 0px 6px 6px rgba(0, 0, 0, 0.15);
+}
+
+#section-heading h2::after{
+    content: "";
+    position: absolute;
+    bottom: -9px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 13%;
+    height: 3px;
+    background-color: #000;
+    
+   
+}
+
+
+
+.description{
+    margin-top: 20px;
+    padding: 25px;
+}
+
+/*------ header----- */
+#header {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.3s ease-out;
+    background-color: #000;
+    height: 72px;
+}
+
+#header h1 {
+    font-size: 2rem;
+    text-shadow: 0px 10px 20px rgba(255, 255, 255, 0.3), 0px 6px 6px rgba(255, 255, 255, 0.25);
+    color: #fff;
+    margin-top: 21px;
+    margin-bottom: 21px;
+}
+
+#menu {
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu li {
+    margin-top: 19px;
+    margin-left: 25px;
+    display: inline-block;
+}
+
+#menu li a {
+    color: #fff;
+    position: relative;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 15px 10px;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+#menu li a:hover {
+    transform: scale(1.2); /* Scales the icon to 120% */
+    color: #FFFFFF; /* Change color on hover */
+    transition: transform 0.3s ease, color 0.3s ease;
+    /* color: rgb(29, 178, 227);
+    text-shadow: 0px 0px 8px rgba(0, 255, 255, 0.7); */
+}
+
+/* -----Banner---- */
+
+#banner {
+
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3), 0px 6px 6px rgba(0, 0, 0, 0.15);
+    min-height:95vh ;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#banner .banner-title {
+    text-align: start;
+    
+}
+
+#banner .banner-title .title, 
+#banner .banner-title .title-discription{
+    color: #fff;
+    padding-bottom: 13px;
+}
+
+#banner .banner-title .title{
+    font-size: 40px;
+    text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3), 0px 6px 6px rgba(0, 0, 0, 0.15);
+}
+#banner .banner-title .title-discription{
+    font-size: 25px;
+    color: #fa6509;
+    font-weight: bold;
+}
+
+
+/* #banner  */
+.img-class {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3), 0px 6px 6px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-title{
+    text-align: center;
+    margin-top: 3rem;
+}
+.img-title h2{
+    color: #fff;
+    text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3), 0px 6px 6px rgba(0, 0, 0, 0.15);
+    font-size: 35px;
+    font-weight: bold;
+}
+
+
+
+#banner .banner-icons i{
+   
+    color: #ffffff;
+    border-width: 0px;
+    text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3), 0px 6px 6px rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+    border-color: #000;
+    text-align: center;
+    font-size: 30px;
+}
+#banner .banner-icons a{
+    text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3), 0px 6px 6px rgba(0, 0, 0, 0.15);
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+}
+
+#banner .banner-icons a:hover i{
+    transform: scale(1.3); /* Scales the icon to 120% */
+    color: #FFFFFF; /* Change color on hover */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+#banner .banner-icons a:hover, #banner .banner-icons a:hover .fa-download {
+    transform: scale(1.05); /* Scales the icon to 120% */
+    color: #FFFFFF; /* Change color on hover */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+
+
+
+/* ----About Section---- */
+
+
+
+
+
+
+/* ---- Skills Section ---- */
+
+/* #skill-section  */
+.card-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#skill-section .card {
+    border-radius: 5%;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3), 0px 6px 6px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+#skill-section .card-img-top {
+    margin-top: 10px;
+    border: none !important;
+    background: none !important;
+    width: 100px !important;
+    height: 100px !important;
+}
+
+/* #skill-section */
+.card-img-top {
+    height: 200px;
+    width: 100%;
+    border: 1px solid #fff;
+    border-radius: 10%;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ---- Project Section---- */
+
+#project-section .card {
+    padding: 20px;
+}
+
+
+/* --- contact section---- */
+
+
+
+.form-row form .form-btn {
+    text-align: center;
+
+}
+
+.form-floating {
+    position: relative;
+}
+
+.icon {
+    color: #000;
+    position: absolute;
+    top: calc(50%);
+    left: 1.25rem;
+}
+
+.form-floating label,
+.form-floating .form-control {
+    left: .5rem;
+    padding-left: 3rem;
+    color: #000;
+}
+
+.icon-textarea {
+    color: #000;
+    position: absolute;
+    top: 1.8rem;
+    left: 1.25rem;
+}
+
+
+/* ----Footer Section---- */
+#footer-sidebar{
+    background: #1b1b1e;
+    color: #fff;
+}
+#footer-sidebar h2, #footer-sidebar p,#footer-sidebar li,#footer-sidebar i{
+    color: #d1cdcd;
+}
+#footer-sidebar .info-side p{
+    margin-top: 15px;
+    font-weight: bolder;
+    
+}
+
+#footer-sidebar .contact-side{
+    margin-top: 10px;
+    justify-items: center;
+}
+
+#footer-sidebar .contact-side ul li {
+    list-style: none;
+    text-align: start;
+}
+
+.contact-side .contact-method li {
+    padding-top: 10px;
+    
+}
+
+.contact-side .contact-links li {
+    display: inline-block;
+    padding-right: 10px;
+    font-size: 25px;
+    
+}
+
+.contact-side .contact-links {
+    text-align: start;
+}
+
+
+#footer{
+    background-color: #000000; /* Adjust color as needed */
+    padding: 10px;
+    text-align: center
+}
+#footer p{
+    color: #fff;
+}
+#footer .container{
+    height: 20px;
+}
